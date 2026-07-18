@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Media Pembelajaran PPKn Kelas VII Semester 1</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Segoe UI,sans-serif;
+background:#f4f7fa;
+transition:.4s;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1d1d1d;
+color:white;
+}
+
+.dark .navbar{
+background:#000!important;
+}
+
+.hero{
+background:linear-gradient(135deg,#02142f,#021930);
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.card{
+transition:.4s;
+border:none;
+box-shadow:0px 5px 15px rgba(0,0,0,.1);
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.section-title{
+font-size:35px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+footer{
+background:#051836;
+color:white;
+padding:20px;
+margin-top:70px;
+text-align:center;
+}
+
+.progress{
+height:25px;
+}
+
+.search-box{
+max-width:450px;
+margin:auto;
+}
+
+.accordion-button{
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+<i class="bi bi-book-half"></i>
+PPKn VII
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#profil">Profil</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#materi">Materi</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#quiz">Quiz</a>
+</li>
+
+<li class="nav-item">
+<button class="btn btn-warning ms-3" onclick="darkMode()">
+🌙 Dark Mode
+</button>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<h1>MEDIA PEMBELAJARAN PPKn</h1>
+
+<h3>Kelas VII Semester 1</h3>
+
+<p>
+
+Belajar Pendidikan Pancasila dan Kewarganegaraan
+secara interaktif menggunakan Bootstrap.
+
+</p>
+
+<a href="#materi" class="btn btn-light btn-lg mt-3">
+Mulai Belajar
+</a>
+
+</div>
+
+</section>
+
+<section class="container mt-5" id="profil">
+
+<h2 class="section-title text-center">
+Profil Website
+</h2>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900"
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-lg-6">
+
+<h3>Media Pembelajaran</h3>
+
+<p>
+
+Website ini dibuat untuk membantu peserta didik
+kelas VII mempelajari materi Pendidikan Pancasila
+dan Kewarganegaraan Semester 1 secara menarik,
+interaktif, serta mudah dipahami.
+
+</p>
+
+<div class="alert alert-primary">
+
+<b>Materi yang tersedia :</b>
+
+<ul>
+
+<li>Bab 1</li>
+<li>Bab 2</li>
+<li>Bab 3</li>
+<li>Bab 4</li>
+<li>Bab 5</li>
+<li>Bab 6</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container mt-5">
+
+<div class="search-box">
+
+<input
+type="text"
+class="form-control"
+id="search"
+placeholder="Cari materi..."
+onkeyup="cariMateri()">
+
+</div>
+
+</section>
+
+<section class="container mt-5" id="materi">
+
+<h2 class="section-title text-center">
+
+Materi PPKn Semester 1
+
+</h2>
+
+<div class="progress mb-5">
+
+<div
+id="progressBelajar"
+class="progress-bar progress-bar-striped progress-bar-animated"
+style="width:0%">
+
+0%
+
+</div>
+
+</div>
+
+<div class="accordion" id="accordionMateri">
+
+<!-- ================= BAB 1 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#bab1">
+
+📘 Bab 1 - Sejarah Kelahiran Pancasila
+
+</button>
+
+</h2>
+
+<div id="bab1" class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+<img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=1200"
+class="img-fluid rounded mb-3">
+
+<h4>Tujuan Pembelajaran</h4>
+
+<ul>
+<li>Menjelaskan proses lahirnya Pancasila.</li>
+<li>Mengenal tokoh-tokoh perumus Pancasila.</li>
+<li>Memahami makna nilai-nilai Pancasila.</li>
+</ul>
+
+<h4>Materi</h4>
+
+<p>
+Pancasila merupakan dasar negara Republik Indonesia.
+Proses perumusannya dimulai pada sidang BPUPKI tahun 1945.
+Beberapa tokoh yang berperan antara lain
+Mohammad Yamin,
+Prof. Soepomo,
+dan Ir. Soekarno.
+</p>
+
+<p>
+Pada tanggal 1 Juni 1945 Ir. Soekarno menyampaikan pidato
+yang berisi lima dasar negara yang kemudian dikenal sebagai
+Pancasila.
+</p>
+
+<p>
+Setelah melalui berbagai pembahasan dan penyempurnaan,
+Pancasila resmi disahkan sebagai dasar negara oleh PPKI
+pada tanggal 18 Agustus 1945.
+</p>
+
+<div class="alert alert-success">
+
+<b>Nilai yang dapat diterapkan:</b>
+
+<ul>
+<li>Cinta tanah air.</li>
+<li>Menghargai jasa pahlawan.</li>
+<li>Menjaga persatuan bangsa.</li>
+</ul>
+
+</div>
+
+<button class="btn btn-primary" onclick="selesaiBelajar()">
+
+✓ Saya Sudah Mempelajari Bab 1
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BAB 2 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#bab2">
+
+📗 Bab 2 - Norma dan Keadilan
+
+</button>
+
+</h2>
+
+<div id="bab2" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200"
+class="img-fluid rounded mb-3">
+
+<h4>Pengertian Norma</h4>
+
+<p>
+
+Norma adalah aturan yang mengatur perilaku manusia
+agar kehidupan masyarakat berjalan tertib,
+aman,
+dan damai.
+
+</p>
+
+<h4>Macam-Macam Norma</h4>
+
+<ul>
+
+<li>Norma Agama</li>
+
+<li>Norma Kesusilaan</li>
+
+<li>Norma Kesopanan</li>
+
+<li>Norma Hukum</li>
+
+</ul>
+
+<h4>Contoh Penerapan</h4>
+
+<ul>
+
+<li>Beribadah sesuai agama.</li>
+
+<li>Menghormati guru.</li>
+
+<li>Membuang sampah pada tempatnya.</li>
+
+<li>Mematuhi peraturan sekolah.</li>
+
+</ul>
+
+<div class="alert alert-warning">
+
+Norma harus dipatuhi agar tercipta kehidupan yang tertib.
+
+</div>
+
+<button class="btn btn-primary"
+onclick="selesaiBelajar()">
+
+✓ Saya Sudah Mempelajari Bab 2
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BAB 3 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#bab3">
+
+📙 Bab 3 - Perumusan dan Pengesahan UUD Negara Republik Indonesia Tahun 1945
+
+</button>
+
+</h2>
+
+<div id="bab3" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200"
+class="img-fluid rounded mb-3">
+
+<h4>Materi</h4>
+
+<p>
+
+Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+merupakan hukum dasar tertulis yang menjadi landasan
+penyelenggaraan negara Indonesia.
+
+</p>
+
+<p>
+
+Setelah Indonesia merdeka,
+PPKI mengadakan sidang pada tanggal
+18 Agustus 1945
+untuk mengesahkan UUD Negara Republik Indonesia Tahun 1945.
+
+</p>
+
+<h4>Isi Pokok</h4>
+
+<ul>
+
+<li>Pembukaan UUD 1945.</li>
+
+<li>Batang Tubuh UUD 1945.</li>
+
+<li>Aturan Peralihan.</li>
+
+<li>Aturan Tambahan.</li>
+
+</ul>
+
+<div class="card bg-light p-3">
+
+<b>Kesimpulan</b>
+
+<p>
+
+UUD 1945 menjadi dasar hukum tertinggi dalam penyelenggaraan
+Negara Kesatuan Republik Indonesia.
+
+</p>
+
+</div>
+
+<br>
+
+<button class="btn btn-primary"
+onclick="selesaiBelajar()">
+
+✓ Saya Sudah Mempelajari Bab 3
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BAB 4 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#bab4">
+
+📕 Bab 4 - Keberagaman Suku, Agama, Ras, dan Antargolongan
+
+</button>
+
+</h2>
+
+<div id="bab4" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<h4>Tujuan Pembelajaran</h4>
+
+<ul>
+<li>Memahami arti keberagaman.</li>
+<li>Menjelaskan penyebab keberagaman.</li>
+<li>Menunjukkan sikap toleransi.</li>
+</ul>
+
+<h4>Materi</h4>
+
+<p>
+Indonesia memiliki keberagaman suku bangsa, agama, ras,
+budaya, bahasa, dan adat istiadat. Keberagaman merupakan
+kekayaan bangsa yang harus dijaga.
+</p>
+
+<p>
+Sikap yang harus dikembangkan adalah saling menghargai,
+menghormati perbedaan, bekerja sama, dan menjaga persatuan.
+</p>
+
+<div class="alert alert-info">
+Keberagaman bukan untuk dipertentangkan, tetapi menjadi kekuatan bangsa Indonesia.
+</div>
+
+<button class="btn btn-primary" onclick="selesaiBelajar()">
+✓ Saya Sudah Mempelajari Bab 4
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BAB 5 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#bab5">
+
+📗 Bab 5 - Kerja Sama dalam Berbagai Bidang Kehidupan
+
+</button>
+
+</h2>
+
+<div id="bab5" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<h4>Materi</h4>
+
+<p>
+Kerja sama adalah kegiatan yang dilakukan bersama-sama
+untuk mencapai tujuan tertentu.
+</p>
+
+<h4>Contoh Kerja Sama</h4>
+
+<ul>
+<li>Gotong royong membersihkan kelas.</li>
+<li>Kerja bakti di lingkungan.</li>
+<li>Belajar kelompok.</li>
+<li>Musyawarah kelas.</li>
+</ul>
+
+<h4>Manfaat Kerja Sama</h4>
+
+<ul>
+<li>Pekerjaan menjadi ringan.</li>
+<li>Mempererat persaudaraan.</li>
+<li>Meningkatkan rasa tanggung jawab.</li>
+<li>Menumbuhkan persatuan.</li>
+</ul>
+
+<div class="alert alert-success">
+Gotong royong merupakan salah satu ciri khas bangsa Indonesia.
+</div>
+
+<button class="btn btn-primary" onclick="selesaiBelajar()">
+✓ Saya Sudah Mempelajari Bab 5
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= BAB 6 ================= -->
+
+<div class="accordion-item materi">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse"
+data-bs-target="#bab6">
+
+📘 Bab 6 - Daerah dalam Kerangka NKRI
+
+</button>
+
+</h2>
+
+<div id="bab6" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+<h4>Materi</h4>
+
+<p>
+Negara Kesatuan Republik Indonesia dibagi menjadi beberapa
+daerah provinsi, kabupaten, dan kota.
+</p>
+
+<p>
+Pemerintah daerah memiliki kewenangan mengatur daerahnya
+melalui sistem otonomi daerah sesuai dengan peraturan
+perundang-undangan.
+</p>
+
+<h4>Hak Warga Negara</h4>
+
+<ul>
+<li>Mendapat pendidikan.</li>
+<li>Mendapat perlindungan hukum.</li>
+<li>Mengemukakan pendapat.</li>
+</ul>
+
+<h4>Kewajiban Warga Negara</h4>
+
+<ul>
+<li>Mematuhi hukum.</li>
+<li>Menjaga persatuan.</li>
+<li>Ikut serta membela negara.</li>
+</ul>
+
+<div class="alert alert-warning">
+Sebagai warga negara yang baik, kita harus melaksanakan hak dan kewajiban secara seimbang.
+</div>
+
+<button class="btn btn-primary" onclick="selesaiBelajar()">
+✓ Saya Sudah Mempelajari Bab 6
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= QUIZ ================= -->
+
+<section class="container mt-5" id="quiz">
+
+<h2 class="text-center section-title">
+Quiz PPKn Kelas VII Semester 1
+</h2>
+
+<div class="card p-4">
+
+<!-- SOAL 1 -->
+<p><b>1. Dasar negara Indonesia adalah....</b></p>
+<input type="radio" name="q1" value="10"> Pancasila<br>
+<input type="radio" name="q1" value="0"> UUD 1945<br>
+<input type="radio" name="q1" value="0"> Proklamasi<br><br>
+
+<!-- SOAL 2 -->
+<p><b>2. Hari lahir Pancasila diperingati setiap....</b></p>
+<input type="radio" name="q2" value="10"> 1 Juni<br>
+<input type="radio" name="q2" value="0"> 17 Agustus<br>
+<input type="radio" name="q2" value="0"> 20 Mei<br><br>
+
+<!-- SOAL 3 -->
+<p><b>3. Tokoh yang menyampaikan pidato lahirnya Pancasila adalah....</b></p>
+<input type="radio" name="q3" value="10"> Ir. Soekarno<br>
+<input type="radio" name="q3" value="0"> Mohammad Hatta<br>
+<input type="radio" name="q3" value="0"> Ahmad Yani<br><br>
+
+<!-- SOAL 4 -->
+<p><b>4. Norma yang berasal dari Tuhan disebut....</b></p>
+<input type="radio" name="q4" value="10"> Norma Agama<br>
+<input type="radio" name="q4" value="0"> Norma Hukum<br>
+<input type="radio" name="q4" value="0"> Norma Kesopanan<br><br>
+
+<!-- SOAL 5 -->
+<p><b>5. Contoh norma hukum adalah....</b></p>
+<input type="radio" name="q5" value="10"> Mematuhi rambu lalu lintas<br>
+<input type="radio" name="q5" value="0"> Menghormati orang tua<br>
+<input type="radio" name="q5" value="0"> Beribadah<br><br>
+
+<!-- SOAL 6 -->
+<p><b>6. UUD 1945 disahkan pada tanggal....</b></p>
+<input type="radio" name="q6" value="10"> 18 Agustus 1945<br>
+<input type="radio" name="q6" value="0"> 17 Agustus 1945<br>
+<input type="radio" name="q6" value="0"> 1 Juni 1945<br><br>
+
+<!-- SOAL 7 -->
+<p><b>7. Yang mengesahkan UUD 1945 adalah....</b></p>
+<input type="radio" name="q7" value="10"> PPKI<br>
+<input type="radio" name="q7" value="0"> BPUPKI<br>
+<input type="radio" name="q7" value="0"> DPR<br><br>
+
+<!-- SOAL 8 -->
+<p><b>8. Indonesia memiliki banyak suku bangsa, hal ini disebut....</b></p>
+<input type="radio" name="q8" value="10"> Keberagaman<br>
+<input type="radio" name="q8" value="0"> Perpecahan<br>
+<input type="radio" name="q8" value="0"> Diskriminasi<br><br>
+
+<!-- SOAL 9 -->
+<p><b>9. Sikap terhadap teman yang berbeda agama adalah....</b></p>
+<input type="radio" name="q9" value="10"> Menghormati<br>
+<input type="radio" name="q9" value="0"> Mengejek<br>
+<input type="radio" name="q9" value="0"> Membenci<br><br>
+
+<!-- SOAL 10 -->
+<p><b>10. Gotong royong merupakan bentuk....</b></p>
+<input type="radio" name="q10" value="10"> Kerja sama<br>
+<input type="radio" name="q10" value="0"> Persaingan<br>
+<input type="radio" name="q10" value="0"> Permusuhan<br><br>
+
+<!-- SOAL 11 -->
+<p><b>11. Kerja bakti di sekolah termasuk....</b></p>
+<input type="radio" name="q11" value="10"> Kerja sama<br>
+<input type="radio" name="q11" value="0"> Pelanggaran<br>
+<input type="radio" name="q11" value="0"> Hukuman<br><br>
+
+<!-- SOAL 12 -->
+<p><b>12. Otonomi daerah berarti....</b></p>
+<input type="radio" name="q12" value="10"> Daerah mengatur urusannya sendiri<br>
+<input type="radio" name="q12" value="0"> Daerah bebas dari NKRI<br>
+<input type="radio" name="q12" value="0"> Negara dibagi dua<br><br>
+
+<!-- SOAL 13 -->
+<p><b>13. Contoh hak warga negara adalah....</b></p>
+<input type="radio" name="q13" value="10"> Mendapat pendidikan<br>
+<input type="radio" name="q13" value="0"> Melanggar hukum<br>
+<input type="radio" name="q13" value="0"> Merusak fasilitas umum<br><br>
+
+<!-- SOAL 14 -->
+<p><b>14. Contoh kewajiban warga negara adalah....</b></p>
+<input type="radio" name="q14" value="10"> Mematuhi hukum<br>
+<input type="radio" name="q14" value="0"> Menuntut hak orang lain<br>
+<input type="radio" name="q14" value="0"> Berbuat semaunya<br><br>
+
+<!-- SOAL 15 -->
+<p><b>15. Lambang sila pertama adalah....</b></p>
+<input type="radio" name="q15" value="10"> Bintang<br>
+<input type="radio" name="q15" value="0"> Pohon Beringin<br>
+<input type="radio" name="q15" value="0"> Kepala Banteng<br><br>
+
+<!-- SOAL 16 -->
+<p><b>16. Semboyan bangsa Indonesia adalah....</b></p>
+<input type="radio" name="q16" value="10"> Bhinneka Tunggal Ika<br>
+<input type="radio" name="q16" value="0"> Tut Wuri Handayani<br>
+<input type="radio" name="q16" value="0"> Merdeka Belajar<br><br>
+
+<!-- SOAL 17 -->
+<p><b>17. Sikap yang sesuai nilai Pancasila adalah....</b></p>
+<input type="radio" name="q17" value="10"> Tolong-menolong<br>
+<input type="radio" name="q17" value="0"> Egois<br>
+<input type="radio" name="q17" value="0"> Curang<br><br>
+
+<!-- SOAL 18 -->
+<p><b>18. Persatuan Indonesia terdapat pada sila ke....</b></p>
+<input type="radio" name="q18" value="10"> 3<br>
+<input type="radio" name="q18" value="0"> 2<br>
+<input type="radio" name="q18" value="0"> 5<br><br>
+
+<!-- SOAL 19 -->
+<p><b>19. Musyawarah dilakukan untuk mencapai....</b></p>
+<input type="radio" name="q19" value="10"> Mufakat<br>
+<input type="radio" name="q19" value="0"> Pertengkaran<br>
+<input type="radio" name="q19" value="0"> Persaingan<br><br>
+
+<!-- SOAL 20 -->
+<p><b>20. Tujuan mempelajari PPKn adalah....</b></p>
+<input type="radio" name="q20" value="10"> Menjadi warga negara yang baik<br>
+<input type="radio" name="q20" value="0"> Menjadi terkenal<br>
+<input type="radio" name="q20" value="0"> Menjadi kaya<br><br>
+
+<button class="btn btn-success btn-lg" onclick="cekQuiz()">
+<i class="bi bi-check-circle"></i> Periksa Nilai
+</button>
+
+<div class="alert alert-primary mt-4" id="hasilQuiz">
+Nilai Anda akan muncul di sini.
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<h5>Media Pembelajaran PPKn Kelas VII Semester 1</h5>
+
+<p>
+
+Dibuat menggunakan Bootstrap 5 | © 2026
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+//==============================
+// DARK MODE
+//==============================
+
+function darkMode(){
+
+document.body.classList.toggle("dark");
+
+}
+
+//==============================
+// SEARCH MATERI
+//==============================
+
+function cariMateri(){
+
+let input=document.getElementById("search").value.toLowerCase();
+
+let materi=document.getElementsByClassName("materi");
+
+for(let i=0;i<materi.length;i++){
+
+let teks=materi[i].innerText.toLowerCase();
+
+if(teks.indexOf(input)>-1){
+
+materi[i].style.display="block";
+
+}
+
+else{
+
+materi[i].style.display="none";
+
+}
+
+}
+
+}
+
+//==============================
+// PROGRESS BELAJAR
+//==============================
+
+let selesai=0;
+
+function selesaiBelajar(){
+
+if(selesai<6){
+
+selesai++;
+
+}
+
+let persen=(selesai/6)*100;
+
+document.getElementById("progressBelajar").style.width=persen+"%";
+
+document.getElementById("progressBelajar").innerHTML=Math.round(persen)+"%";
+
+if(selesai==6){
+
+alert("🎉 Selamat! Semua materi telah dipelajari.");
+
+}
+
+}
+
+//==============================
+// QUIZ
+//==============================
+
+function cekQuiz(){
+
+let nilai=0;
+
+for(let i=1;i<=20;i++){
+
+let jawaban=document.getElementsByName("q"+i);
+
+for(let j=0;j<jawaban.length;j++){
+
+if(jawaban[j].checked){
+
+nilai+=parseInt(jawaban[j].value);
+
+}
+
+}
+
+}
+
+let skor=nilai/2;
+
+let kategori="";
+
+if(skor>=90){
+
+kategori="🏆 Sangat Baik";
+
+}else if(skor>=75){
+
+kategori="🥇 Baik";
+
+}else if(skor>=60){
+
+kategori="🥈 Cukup";
+
+}else{
+
+kategori="📚 Perlu Belajar Lagi";
+
+}
+
+document.getElementById("hasilQuiz").innerHTML=
+"<h4>Nilai Anda : "+skor+"</h4><h5>"+kategori+"</h5>";
+
+}
+
+</script>
+
+</body>
+
+</html>
